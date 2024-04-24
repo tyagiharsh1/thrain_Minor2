@@ -1,34 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Character encoding scheme -->
-		<meta charset="UTF-8"> 
-		<title></title>
-	</head>
-	<body>
-		<center>
-			<h1> Thrain </h1><br><br>
-			<table>
-				<tr>
-					<td><a href='public-key-directory' target="blank"><button class="btn" style="margin-right: 10px;">public-key-directory</button></a></td>
-					<td><a href='home'><button class="btn" style="margin-right: 10px;">home</button></a></td>
-					<td><a href='upload-file'><button class="btn" style="margin-right: 10px;">upload-file</button></a></td>
-				</tr>
-			</table>
-			<br><br>
-			<div class="container" style="font-size:25px;">
-				<p>In this case the user has uploaded his file on the cloud. Now he has the following three options:</p>
-				<br>
-					He can either get the list of all the different files that are present on the cloud.
-					<br>He can also navigate back to the home page of this website.
-					<br>He may even choose to upliad another file on the cloud.
-			</div>
-		</center>
-	</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrain</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding-top: 50px; /* Adjusted padding-top for better spacing */
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 36px; /* Increased font size */
+            /* text-decoration: underline; Added underline */
+            text-align: center; /* Centered text */
+            margin-bottom: 20px; /* Added margin bottom */
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Added margin between buttons */
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        ul {
+            padding: 0;
+            margin-top: 20px; /* Added margin-top for spacing */
+        }
+        li {
+            font-size: 18px; /* Increased font size */
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px; /* Added margin-bottom for spacing */
+            /* display: flex;
+            align-items: center; */
+            /* text-decoration:none ; Removed text decoration */
+            color: #007bff; /* Changed text color */
+            list-style-type: disc; /* Changed list style type to dotted */
+            margin-left: 20px; /* Added margin to the left */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CipherConnect</h1>
+        <div class="text-center">
+            <a href="./public-key-list.html" target="_blank" class="btn btn-custom">Public Key Directory</a>
+            <a href="./index.html" class="btn btn-custom">Home</a>
+            <a href="./upload.html" class=" btn-custom">Upload File</a>
+        </div>
+        <br><br>
+        <p>In this case, the user has uploaded his file to the cloud. Now he has the following three options:</p>
+        <ul>
+            <li>Get the list of all the different files present on the cloud.</li>
+            <li>Navigate back to the home page of this website.</li>
+            <li>Choose to upload another file to the cloud.</li>
+        </ul>
+    </div>
+</body>
 </html>

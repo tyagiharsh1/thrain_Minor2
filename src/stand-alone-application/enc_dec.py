@@ -60,7 +60,7 @@ def iv():
     The initialization vector to use for encryption or decryption.
     It is ignored for MODE_ECB and MODE_CTR.
     """
-    return chr(0) * 16
+    return bytes([0]*16)
 
 class AESCipher(object):
 

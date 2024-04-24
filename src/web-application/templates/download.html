@@ -9,20 +9,69 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Character encoding scheme -->
 		<meta charset="UTF-8"> 
+		<style>
+		h1 {
+        font-size: 40px; /* Corrected font size */
+        font-family: "Arial", sans-serif;
+        color: rgb(242, 245, 246); /* Set text color to white */
+         background: linear-gradient(to right, #3498db, #2ecc71);
+        padding: 10px; /* Padding for the h1 tag */
+        border-radius: 10px; /* Border-radius for rounded corners */
+        text-align: center; /* Center-align the text */
+		width: 90%;
+		height: 80px;
+      }
+	  form {
+            margin: 20px 0;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+			position: relative;
+			left: 380px;
+			font-size: 20px;
+			cursor: pointer;
+			color: #151b0d;
+			/* border: 1px solid #ccc; */
+			
+        }
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: hsl(51, 84%, 48%);
+        }
+        p {
+            font-size: 20px;
+        }
+	  
+		</style>
 	</head>
 	<body>
 		<div class="container">
 		<center>
-			<h1 style="color: darkblue"> <b>Secure file transfer using Diffie-Hellman protocol</b> </h1><br><br>
+			<h1> <b>Secure file transfer using Diffie-Hellman protocol</b> </h1><br>
 			<form action = "/download_data" method = "POST" enctype = "multipart/form-data">
 				<input type = "file" name = "file" required/>
-				<br><br><input type = "Submit"/>
+				<br><input type = "Submit"/>
 			</form>
 			<p style="font-size: 20px">People are constantly travelling around and need to have a medium where they can store their files and access them when needed. The biggest challenge for such an undertaking is to secure the files that are stored on the cloud and to prevent them from being misused by any unauthorised person. This project invloves storing the files in an encrypted and secured manner in the cloud using Diffie Hellman algorithm thus providing security and unhindered access</p>
-			<br><h3><b>A Project by:</b></h3><br>
-			<h4><i><b>Hardik Gaur<br>B.Tech (CSE)<br>GE-152010638</b></i></h34>
-			<br>
-			<h4><i><b>Parth Trehan<br>B.Tech (CSE)<br>GE-152010638</b></i></h4>
+			<h3><b>A Project by:</b></h3><br>
+			<h4><i><b>Paras Verma<br>B.Tech (CSE)<br>500091390</b></i></h34>
+			
+			<h4><i><b>Harsh Tyagi<br>B.Tech (CSE)<br>500091612</b></i></h4>
+	
+			<h4><i><b>Prakriti Bhatt<br>B.Tech (CSE)<br>500094170</b></i></h34>
+			
+			<h4><i><b>Mansha Arora <br>B.Tech (CSE)<br>500091935</br></i></h4>
+
 		</center>
 	</div>
 	</body>

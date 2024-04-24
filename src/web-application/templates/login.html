@@ -1,41 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .app-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .login-field {
+            padding: 10px;
+            width: calc(100% - 22px); /* Adjusted width with a left margin of 11px */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 3px; /* Left margin added */
+        }
+
+        .login-field-icon {
+            position: absolute;
+            margin-top: -25px;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-	{% block body %}
-	{% if session['logged_in'] %}
-	<p>You're logged in already!</p>
-	{% else %}
+    <form action="/login" method="POST" class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
  
+            <div class="login-form">
+                <div class="control-group">
+                    <input type="text" class="login-field" value="" placeholder="Username" name="username">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
  
-	<form action="/login" method="POST">
-		<div class="login">
-			<div class="login-screen">
-				<div class="app-title">
-					<h1>Login</h1>
-				</div>
+                <div class="control-group">
+                    <input type="password" class="login-field" value="" placeholder="Password" name="password">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
  
-				<div class="login-form">
-					<div class="control-group">
-					<input type="text" class="login-field" value="" placeholder="username" name="username" width="10vw">
-					<label class="login-field-icon fui-user" for="login-name"></label>
-					</div>
- 
-					<div class="control-group">
-					<input type="password" class="login-field" value="" placeholder="password" name="password" width="10vw">
-					<label class="login-field-icon fui-lock" for="login-pass"></label>
-					</div>
- 
-                	<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" width="10vw">
-			    	<br>
-				</div>
-			</div>
-		</div>
-	</form>
- 
-	{% endif %}
-	{% endblock %}
+                <input type="submit" value="Log in" class="btn">
+            </div>
+        </div>
+    </form>
 </body>
 </html>
